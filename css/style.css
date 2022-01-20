@@ -1,0 +1,72 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#logo img {
+    width: 120px;
+    height: 48px;
+}
+
+section {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#output-crypto-descrypto-area{
+    position: absolute;
+    right: 20px;
+}
+
+#output-text-area{
+    width: 50%;
+    height: 50%;  
+}
+#input-area {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#button-area {
+    margin-left: 70px;
+    padding: 10px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 24px; 
+    padding: 10px;
+    text-align: center;
+}
+
+#crypto-button {
+    background-color: #0A3871;
+    margin-right: 20px;
+    
+}
+
+#decrypto-button {
+    background-color: #D8DFE8;
+}
+
+#output-area {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+#footer {
+    text-align: center;
+}
