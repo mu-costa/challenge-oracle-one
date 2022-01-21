@@ -70,3 +70,8 @@ button {
 #footer {
     text-align: center;
 }
+
+#title-site {
+    display: inline-block;
+    padding-left:250px;
+}
