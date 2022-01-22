@@ -1,11 +1,14 @@
 const inputArea = document.querySelector('#input-area');
-const criptografarBotao = document.getElementById('crypto-button');
 const outputArea = document.querySelector('#output-area');
-let textoNormal;
-let textoCriptografado = [];
+const criptografarBotao = document.getElementById('crypto-button');
+const descriptografarBotao = document.getElementById('decrypto-button')
+
 
     criptografarBotao.addEventListener('click',()=> {
+        let textoNormal;
+        let textoCriptografado = [];
         textoNormal = inputArea.value.split('');
+
         //algoritmo para converter o array textoNormal para o array criptografado textoCriptografago
         for (let index = 0; index < textoNormal.length; index+=1) {
 
@@ -26,3 +29,16 @@ let textoCriptografado = [];
      outputArea.value = textoCriptografado.join('');        
     })   
 
+    //o algoritmo é diferente tenho que buscar um modo de encontrar as sílabas especificas na string
+
+    descriptografarBotao.addEventListener('click',()=> {
+        let textoDoOutput;
+        let textoDescriptografado;
+        let novoTexto;
+        
+        textoDoOutput = inputArea.value;
+        textoDescriptografado = textoDoOutput.replace(/ai/gi,'a').replace(/enter/g, 'e').replace(/imes/g,'i').replace(/ober/g,'o').replace(/ufat/g,'u');
+
+        outputArea.value = textoDescriptografado;
+           
+    })
